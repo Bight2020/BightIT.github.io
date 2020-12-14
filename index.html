@@ -1,117 +1,557 @@
 <!DOCTYPE html>
-<!--/*License at http://github.com/YC/coming-soon*/-->
-<html>
-    <head>
-        <meta charset="utf-8"> <!--Define Charset-->
-        <meta name=viewport content="width=device-width, initial-scale=1">
-        <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-        <style type="text/css">
-            body {margin:0;padding:0;} /*CSS Reset*/
-            html {height:100%;}
-            body
-            {
-                font-family: 'Roboto', sans-serif; /*Default Font*/
-                width:100%; height:100%;
-                text-align:center; /*Align Text to Center*/
-                display:table;
-                -webkit-animation: fadeinelement 3s;
-                animation: fadeinelement 3s;
-            }
-            h1,h2,h3
-            {
-                cursor:default; /*When hover, default cursor displays*/
-            }
-            h2
-            {
-                font-weight:300;
-                margin-bottom:25px;
-            }
-            img
-            {
-                width:25%; /*Define Image Width*/
-                width:25vw;
-                border:0; /*For IE*/
-            }
-            #main
-            {
-                vertical-align:middle;
-                display:table-cell;
-            }
-            #progress
-            {
-                width:45%; /*Changes Percentage of Bar Total Width*/
-                width:45vw;
-                border-radius:10px; /*Roundness of Bar*/
-                background-color:#a8a8a8; /*Background Colour of Bar*/
-                margin:0 auto; /*Center Object*/
-                padding:7px 5px;
-                /*border: 5px solid #a8a8a8; - Border Colour of Bar*/
-            }
-            #fill
-            {
-                padding:2px 0;
-                background-color:#00b98b; /*Fill of Bar*/
-                width:35%; /*Bar Percent, Can be Customized down Below*/
-                border-radius:25px; /*Bar Roundness*/
-                -webkit-animation: proanimate 2s;
-                animation: proanimate 2s;
-            }
-            #barpercent h3
-            {
-                color:white; /*Bar Percentage Text Colour*/
-                margin:0; padding:0;
-                opacity:0;
-                -webkit-animation: fadeinelement 3s forwards;
-                animation: fadeinelement 3s forwards;
-            }
+<html lang="en">
 
-            @keyframes fadeinelement /*Fades in Page*/
-            {
-                from {opacity:0;}
-                to {opacity:1;}
-            }
-            @-webkit-keyframes fadeinelement
-            {
-                from {opacity:0;}
-                to {opacity:1;}
-            }	
-            
-             /* Animates Bar Moving on Page Load*/
-            @keyframes proanimate{from {width:0%;}}
-            @-webkit-keyframes proanimate{from {width:0%;}}
-            
-            /*Responsive*/
-            @media screen and (max-width:600px)
-            {
-                img
-                {
-                    width:80%;
-                    width:60vw;
-                }
-                h1
-                {
-                    font-size:1.3em;
-                }
-                h2
-                {
-                    margin: 1.1em;
-                    font-size:1.1em;
-                }
-                #progress
-                {
-                    width:80%; /*Changes Percentage of Bar Width*/
-                }
-            }
-        </style>	
-        <!--Title of Page--><title>Coming Soon</title>
-    </head>	
-    <body>
-        <div id="main"> <!--Start Page Container-->
-            <img src="logo.png" alt=""> <!--Logo-->
-            <h1>Bight IT Services</h1>
-            <h2>Our website is currently under construction. </h2>
-            <div id="progress"><div id="fill"><div id="barpercent"><h3>35%</h3></div></div></div>
-        </div> <!--End Page Container-->
-        <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css' property='stylesheet'> <!--Define Google Fonts-->
-    </body>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="Nitesh Varma Rudraraju, Kundan Reddy Manda, niteshvarma, kundanreddy, BIGHT, bight it services pvt lmtd, BIGHT IT SERVICES PRIVATE LIMITED, kundanreddymanda, niteshvarmarudraraju"/>
+<meta name="author" content="BIGHT" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<title>BIGHT HOME</title>
+
+<!-- Fav Icon -->
+<link rel="icon" href="images/" type="image/x-icon">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&amp;display=swap" rel="stylesheet">
+
+<!-- Stylesheets -->
+<link href="css/font-awesome-all.css" rel="stylesheet">
+<link href="css/flaticon.css" rel="stylesheet">
+<link href="css/owl.css" rel="stylesheet">
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/jquery.fancybox.min.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+
+</head>
+
+
+<!-- page wrapper -->
+<body class="boxed_wrapper">
+
+    <!-- preloader -->
+    <div class="preloader"></div>
+    <!-- preloader -->
+
+    <!-- main header -->
+    <header class="main-header">
+        <div class="outer-container">
+            <div class="container">
+                <div class="main-box clearfix">
+                    <div class="logo-box pull-left">
+                        <figure class="logo"><a href="index.html"><img src="images/logo-3.png" alt=""></a></figure>
+                    </div>
+                    <div class="menu-area pull-right clearfix">
+                        <!--Mobile Navigation Toggler-->
+                        <div class="mobile-nav-toggler">
+                            <i class="icon-bar"></i>
+                            <i class="icon-bar"></i>
+                            <i class="icon-bar"></i>
+                        </div>
+                        <nav class="main-menu navbar-expand-md navbar-light">
+                            <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+                                <ul class="navigation clearfix">
+                                    <li id="Home" class="current dropdown"><a href="#Home">Home</a>
+                                    </li> 
+                                    <li class="dropdown"><a href="#About">About</a>
+                                       </li>
+                                    <li class="dropdown"><a href="#Features">Features</a>
+                                        </li>
+                                    <li class="dropdown"><a href="#Portfolio">Portfolio</a>
+                                       </li>
+                                    <!--<li class="dropdown"><a href="#Latest">Partners</a>
+                                    </li> -->                             
+                                    <li><a class="smoth-scroll" href="#Contact">Contact</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                       <!-- <div class="btn-box"><a href="contact.html">Get In Touch</a></div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--sticky Header-->
+        <div class="sticky-header">
+            <div class="container clearfix">
+                <figure class="logo-box"><a href="index.html"><img src="images/small-logo.png" alt=""></a></figure>
+                <div class="menu-area">
+                    <nav class="main-menu clearfix">
+                        <!--Keep This Empty / Menu will come through Javascript-->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- main-header end -->
+
+    <!-- Mobile Menu  -->
+    <div class="mobile-menu">
+        <div class="menu-backdrop"></div>
+        <div class="close-btn"><i class="fas fa-times"></i></div>
+        
+        <nav class="menu-box">
+            <div class="nav-logo"><a href="index.html"><img src="images/logo.png" alt="" title=""></a></div>
+            <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
+            <div class="contact-info">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> H.NO.17-1-382/K/B/1/10/D, M.N.REDDY Complex, Champapet, Hyderabad, Telangana</li>
+                    <li><i class="fas fa-phone"></i><a href="tel: 07995750567">(+91) 7995750567</a></li>
+                    <li><i class="fas fa-envelope"></i><a href="mailto:hariharareddypamuluri@gmail.com">Mail</a></li>
+                </ul>
+            </div>
+            <div class="social-links">
+                <ul class="clearfix">
+                    <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                    <li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
+                    <li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>
+                    <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                    <li><a href="#"><span class="fab fa-youtube"></span></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div><!-- End Mobile Menu -->
+
+
+    <!-- banner-section -->
+    <section class="banner-style-13">
+        <div class="image-shap wow slideInLeft" data-wow-delay="00ms" data-wow-duration="1500ms" style="background-image: url(images/icons/shap-9.png);"></div>
+        <div class="anim-icons">
+            <div class="icon icon-1"></div>
+            <div class="icon icon-2"></div>
+        </div>
+        <div class="image-layer" style="background-image: url(images/icons/banner-bg-5.png);"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12 col-sm-12 content-column">
+                    <div class="content-box">
+                        <h1>WELCOME TO <span>BIGHT!</span></h1>
+                        <h3>We’re innovation company with focus in cutting-edge technology.</h3> <br/>
+                        <div class="text-head">We created our own platform for one reason: because our content is technologically unique. Users have the power to engage with the content they are watching. And we believe emotional engagement with a story can be amplified through the web experience.</div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 image-column">
+                    <div class="image-box  js-tilt">
+                        <figure class="image clearfix wow slideInLeft" data-wow-delay="00ms" data-wow-duration="1500ms"><img src="images/resource/illustration-20.png" alt=""></figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner-section end -->
+
+    <!-- chooseus-section -->
+       <div id="About" class="sec-title center">
+                <h2>We Focus On</h2>
+            </div>
+    <section class="chooseus-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 inner-column">
+                    <div class="inner-box">
+                        <h3>Ease of use</h3>
+                        <ul class="list-item clearfix">
+                            <li>Simple and straightforward user interface with a minimal learning curve.</li>
+                            <li>Ability to set up and start selling right from day one.</li>
+                            <!--<li>Easy migration from spreadsheets and other CRM systems.</li>-->
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 inner-column">
+                    <div class="inner-box">
+                        <h3>Feature-rich</h3>
+                        <ul class="list-item clearfix">
+                            <li>At Bight we build products which connects emerging technology to everyday needs.</li>
+                            <li>Spend more time interacting with your customers and less on manually entering data.</li>
+                            <!--<li>Powerful analytics and reporting that helps you make smarter business decisions.</li>-->
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 inner-column">
+                    <div class="inner-box">
+                        <h3>Customizable</h3>
+                        <ul class="list-item clearfix">
+                            <!--<li>Completely customize your CRM experience without writing a single line of code.</li>-->
+                            <li>Effortless integration with third-party business apps that you use daily.</li>
+                            <li>Easily adaptable to meet different industry specific needs.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- chooseus-section end -->
+    
+
+    <!-- feature-style-11 -->
+    <section class="feature-style-11">
+        <div class="container">
+            <div id="Features" class="sec-title center">
+                <h2>Features at a Glance</h2>
+            </div>
+            <div class="inner-content">
+                <div class="inner-box">
+                    <div class="row align-items-center">
+                        <div class="col-lg-7 col-md-12 col-sm-12 image-column">
+                            <div id="image_block_34">
+                                <div class="image-box wow slideInLeft" data-wow-delay="00ms" data-wow-duration="1500ms">
+                                    <div class="bg-layer" style="background-image: url(images/icons/pattern-15.png);"></div>
+                                    <figure class="image clearfix js-tilt"><img src="images/resource/illustration-21.png" alt=""></figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-12 col-sm-12 content-column">
+                            <div id="content_block_34">
+                                <div class="content-box wow fadeInRight" data-wow-delay="00ms" data-wow-duration="1500ms">
+                                    <div class="top-title"><i class="fas fa-angle-double-right"></i>Study</div>
+                                    <div class="sec-title"><h2>Research</h2></div>
+                                    <ul class="list-item clearfix">
+                                        <a>We are inventors and explorers in an era in which innovation must be rethought. Together with companies from all industries, we create revolutionary solutions that we need and love.</a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inner-box">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5 col-md-12 col-sm-12 content-column">
+                            <div id="content_block_34">
+                                <div class="content-box wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1500ms">
+                                    <div class="top-title"><i class="fas fa-angle-double-right"></i>Plan</div>
+                                    <div class="sec-title"><h2>Plan &amp; Design</h2></div>
+                                    <ul class="list-item clearfix">
+                                         <a>We have co-created solutions from an idea to a market-ready product. We enable entire organizations to become better innovators.</a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-md-12 col-sm-12 image-column">
+                            <div id="image_block_34">
+                                <div class="image-box wow slideInRight" data-wow-delay="00ms" data-wow-duration="1500ms">
+                                    <div class="bg-layer" style="background-image: url(images/icons/pattern-16.png);"></div>
+                                    <figure class="image clearfix js-tilt"><img src="images/resource/illustration-22.png" alt=""></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inner-box">
+                    <div class="row align-items-center">
+                        <div class="col-lg-7 col-md-12 col-sm-12 image-column">
+                            <div id="image_block_34">
+                                <div class="image-box wow slideInLeft" data-wow-delay="00ms" data-wow-duration="1500ms">
+                                    <div class="bg-layer" style="background-image: url(images/icons/pattern-17.png);"></div>
+                                    <figure class="image clearfix js-tilt"><img src="images/resource/illustration-23.png" alt=""></figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-12 col-sm-12 content-column">
+                            <div id="content_block_34">
+                                <div class="content-box wow fadeInRight" data-wow-delay="00ms" data-wow-duration="1500ms">
+                                    <div class="top-title"><i class="fas fa-angle-double-right"></i>Development</div>
+                                    <div class="sec-title"><h2>Develop &amp; Deploy</h2></div>
+                                    <ul class="list-item clearfix">
+                                        <a>We are committed to customer-centric development of products, services and business models and involve the user at an early stage in the development of new solutions.</a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="inner-box">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5 col-md-12 col-sm-12 content-column">
+                            <div id="content_block_34">
+                                <div class="content-box  wow fadeInLeft animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+                                    <div id="Element" class="top-title"><i class="fas fa-angle-double-right"></i>Analytics</div>
+                                    <div class="sec-title"><h2>Reports and insights</h2></div>
+                                    <ul class="list-item clearfix">
+                                        <li>Get powerful, real-time analytics that can help you make smarter business decisions.</li>
+                                        <li>Measure and manage your organization’s territory-wide sales performance.</li>
+                                        <li>Track your key performance indicators, including current trends and future predictions, based on the wealth of data captured in your CRM.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-md-12 col-sm-12 image-column">
+                            <div id="image_block_34">
+                                <div class="image-box wow slideInRight" data-wow-delay="00ms" data-wow-duration="1500ms">
+                                    <div class="bg-layer" style="background-image: url(images/icons/pattern-18.png);"></div>
+                                    <figure class="image clearfix js-tilt"><img src="images/resource/illustration-24.png" alt=""></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+                <!--<div class="inner-box">
+                    <div class="row align-items-center">
+                        <div class="col-lg-7 col-md-12 col-sm-12 image-column">
+                            <div id="image_block_34">
+                                <div class="image-box wow slideInLeft" data-wow-delay="00ms" data-wow-duration="1500ms">
+                                    <div class="bg-layer" style="background-image: url(images/icons/pattern-19.png);"></div>
+                                    <figure class="image clearfix js-tilt"><img src="images/resource/illustration-25.png" alt=""></figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-12 col-sm-12 content-column">
+                            <div id="content_block_34">
+                                <div class="content-box wow fadeInRight" data-wow-delay="00ms" data-wow-duration="1500ms">
+                                    <div class="top-title"><i class="fas fa-angle-double-right"></i>AIl for Sales</div>
+                                    <div class="sec-title"><h2>Conversational AI for Sales</h2></div>
+                                    <ul class="list-item clearfix">
+                                        <li>Your AI-powered sales assistant, can help you find any information you need from your CRM data, almost instantly.</li>
+                                        <li>Appway improves the quality of your existing data so that you can get additional customer insights.</li>
+                                        <li>Receive intelligent alerts, task reminders, and suggestions for the best times to contact your leads based on your past successful interactions.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </section>
+    <!-- feature-style-11 end -->
+    
+    <!-- portfolio-section -->
+    <section class="portfolio-section">
+        <div class="container">
+                <div id="Portfolio" class="sec-title center">
+                    <h2>Portfolio</h2>
+                </div>
+                <div class="items-container row clearfix">
+                    <div class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all graphic design branding">
+                        <div class="portfolio-block-one">
+                            <div class="image-box">
+                                <figure class="image"><img src="images/gallery/p9.jpg" alt=""></figure>
+                                <div class="content-box" >
+                                    <div class="inner">
+                                        <div class="title">Easyle</div>
+                                        <h3><a>Education Platform</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all design">
+                        <div class="portfolio-block-one">
+                            <div class="image-box">
+                                <figure class="image"><img src="images/gallery/p10.jpg" alt=""></figure>
+                                <div class="content-box">
+                                    <div class="inner">
+                                        <div class="title">EasyHiring</div>
+                                        <h3><a href="portfolio-details.html">Hiring Platform</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all graphic branding">
+                        <div class="portfolio-block-one">
+                            <div class="image-box">
+                                <figure class="image"><img src="images/gallery/p11.jpg" alt=""></figure>
+                                <div class="content-box">
+                                    <div class="inner">
+                                        <div class="title">EasyConstruct</div>
+                                        <h3><a href="portfolio-details.html">Construction material software</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <!-- portfolio-section end -->
+
+
+    <!-- testimonial-style-11 -->
+    <!--<section class="testimonial-style-11">
+        <div id="Latest" class="sec-title center">
+                <h2>Partners Views</h2>
+            </div>
+        <div class="anim-icons">
+            <div class="icon icon-1"><img src="images/icons/anim-icon-12.png" alt=""></div>
+            <div class="icon icon-2"><img src="images/icons/anim-icon-13.png" alt=""></div>
+            <div class="icon icon-3"><img src="images/icons/anim-icon-14.png" alt=""></div>
+        </div>
+        <div class="container">
+            <div class="inner-container">
+                <div class="bg-layer" style="background-image: url(images/icons/testimonial-bg-7.png);"></div>
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12 col-sm-12 title-column">
+                        <div class="sec-title"><h2>People Experience Share With Us</h2></div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 inner-column">
+                        <div class="testimonial-inner">
+                            <div class="testimonial-carousel-3 owl-carousel owl-theme owl-dots-none">
+                                <div class="testimonial-content">
+                                    <figure class="image-box"><img src="images/resource/testimonial-12.png" alt=""></figure>
+                                    <div class="text">“We don't take ourselves too seriously, but seriously enough to ensure we're creating the best product and experience for our customers. I feel like Help Scout does the same.”</div>
+                                    <div class="author-info">
+                                        <h3 class="name">TeamSnap</h3>
+                                        <span class="designation">VP of Customer Experience</span>
+                                    </div>
+                                </div>
+                                <div class="testimonial-content">
+                                    <figure class="image-box"><img src="images/resource/testimonial-12.png" alt=""></figure>
+                                    <div class="text">“We don't take ourselves too seriously, but seriously enough to ensure we're creating the best product and experience for our customers. I feel like Help Scout does the same.”</div>
+                                    <div class="author-info">
+                                        <h3 class="name">TeamSnap</h3>
+                                        <span class="designation">VP of Customer Experience</span>
+                                    </div>
+                                </div>
+                                <div class="testimonial-content">
+                                    <figure class="image-box"><img src="images/resource/testimonial-12.png" alt=""></figure>
+                                    <div class="text">“We don't take ourselves too seriously, but seriously enough to ensure we're creating the best product and experience for our customers. I feel like Help Scout does the same.”</div>
+                                    <div class="author-info">
+                                        <h3 class="name">Vishnu </h3>
+                                        <span class="designation">CEO at TechOmega</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+    <!-- testimonial-style-11 end -->
+    
+    <!-- contact-section -->
+    <section class="contact-section">
+        <div id="Contact" class="sec-title center">
+                <h2>Contact</h2>
+            </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-md-12 col-sm-12 offset-lg-1 big-column">
+                    <div class="info-content centred">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-12 info-column">
+                                <div class="single-info-box">
+                                    <figure class="icon-box"><img src="images/icons/info-icon-1.png" alt=""></figure>
+                                    <h2>Phone</h2>
+                                    <!--<div class="text">Start working with Landrick that can provide everything</div>-->
+                                    <div class="phone"><a href="tel:07995750567">Call</a></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 info-column">
+                                <div class="single-info-box">
+                                    <figure class="icon-box" ><img src="images/icons/info-icon-2.png" alt=""></figure>
+                                    <h2 >E-mail</h2>
+                                    <!--<div class="text">Start working with Landrick that can provide everything</div>-->
+                                    <div class="phone"><a href="mailto:hariharareddypamuluri@gmail.com">Mail</a></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 info-column">
+                                <div class="single-info-box">
+                                    <figure class="icon-box"><img src="images/icons/info-icon-3.png" alt=""></figure>
+                                    <h2>Address</h2>
+                                    <!--<div class="text"> H.NO.17-1-382/K/B/1/10/D, M.N.REDDY Complex, Champapet, Hyderabad, Telangana</div>-->
+                                    <div class="phone"><a href="#">View on Google map</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <figure class="image-box"><img src="images/resource/contact-1.png" alt=""></figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact-section end -->
+
+
+    <!-- main-footer -->
+    <footer class="main-footer style-five style-six">
+        <div class="anim-icons">
+            <div class="icon icon-1"><img src="images/icons/pattern-21.png" alt=""></div>
+        </div>
+        <div class="image-layer" style="background-image: url(images/icons/footer-bg-6.png);"></div>
+        <div class="container">
+            <div class="footer-top">
+                <div class="widget-section">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
+                            <div class="about-widget footer-widget">
+                                <figure class="footer-logo"><a href="index.html"><img src="images/footer-logo-2.png" alt=""></a></figure>
+                                <div class="text">A Company that embraces technology whenever it advances storytelling.</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                            <div class="contact-widget footer-widget">
+                                <h4 class="widget-title">Contact Us</h4>
+                                <div class="widget-content">
+                                    <ul class="contact-info clearfix">
+                                        <li><i class="fas fa-map-marker-alt"></i> H.NO.17-1-382/K/B/1/10/D, M.N.REDDY Complex, Champapet, Hyderabad, Telangana</li>
+                                        <li><i class="fas fa-phone"></i><a href="tel: 07995750567">(+91) 7995750567</a></li>
+                                        <li><i class="fas fa-envelope"></i><a href="mailto:hariharareddypamuluri@gmail.com">Mail</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                            <div class="links-widget footer-widget">
+                                <h4 class="widget-title">About Company</h4>
+                                <div class="widget-content">
+                                    <ul class="list clearfix">
+                                        <li><a href="#">Appway Online</a></li>
+                                        <li><a href="#">Our Leadership</a></li>
+                                        <li><a href="#">Carrers</a></li>
+                                        <li><a href="#">What We Do</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom clearfix">
+                <ul class="footer-nav pull-right">
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Legal</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">&copy; 2020 <a href="#">BIGHT</a>. All rights reserved</div>
+    </footer>
+    <!-- main-footer end -->
+
+
+
+<!--Scroll to top-->
+<button class="scroll-top scroll-to-target" data-target="html">
+    <span class="fa fa-arrow-up"></span>
+</button>
+
+
+<!-- jequery plugins -->
+<script src="js/jquery.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/validation.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/appear.js"></script>
+<script src="js/circle-progress.js"></script>
+<script src="js/jquery.countTo.js"></script>
+<script src="js/nav-tool.js"></script>
+<script src="js/scrollbar.js"></script>
+<script src="js/jquery.paroller.min.js"></script>
+<script src="js/tilt.jquery.js"></script>
+
+<!-- main-js -->
+<script src="js/script.js"></script>
+
+</body><!-- End of .page_wrapper -->
+
 </html>
