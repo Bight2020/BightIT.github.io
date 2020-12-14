@@ -407,6 +407,7 @@ img {
 
 .sec-title.center{
   text-align: center;
+  
 }
 
 .sec-title h2{
@@ -444,7 +445,7 @@ img {
   height: 4px;
   left: 0px;
   bottom: 0px;
-  transition: all 500ms ease;
+  transition: all 50ms ease;
   -webkit-mask-image: linear-gradient(-75deg, rgba(244,55,55,0.6) 50%, #f43737 50%, rgba(0,0,0,1) 70%);
   -webkit-mask-size: 200%;
   animation: shine 2s infinite;
@@ -20781,39 +20782,67 @@ div#mCSB_1_container{
 .portfolio-block-one .image-box .content-box .inner{
   position: relative;
   text-align: center;
-  opacity: 0;
+  /* opacity: 0.5; */
   -webkit-transform: scale(0.5,0.5);
   -ms-transform: scale(0.5,0.5);
-  transform: scale(0.5,0.5);
+  transform: scale(0.9,0.9);
   transition: all 600ms ease;
   -moz-transition: all 600ms ease;
   -webkit-transition: all 600ms ease;
   -ms-transition: all 600ms ease;
   -o-transition: all 600ms ease;
+  
 }
 
 .portfolio-block-one:hover .image-box .content-box .inner{
   opacity: 1;
-  -webkit-transition-delay: 500ms;
-  -moz-transition-delay: 500ms;
-  -ms-transition-delay: 500ms;
-  -o-transition-delay: 500ms;
-  transition-delay: 500ms;
+  -webkit-transition-delay: 50ms;
+  -moz-transition-delay: 50ms;
+  -ms-transition-delay: 50ms;
+  -o-transition-delay: 50ms;
+  transition-delay: 50ms;
   -webkit-transform: scale(1,1);
   -ms-transform: scale(1,1);
-  transform: scale(1,1);
+  transform: scale(1.1,1.2);
+  
 }
+
+
 
 .portfolio-block-one .image-box .content-box .title{
   position: relative;
   font-size: 18px;
   line-height: 28px;
-  color: #fff;
+  color: black;
   font-weight: 500;
   margin-bottom: 12px;
 }
 
+.portfolio-block-one:hover .image-box .content-box .title{
+  position: relative;
+  font-size: 18px;
+  line-height: 28px;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 12px;
+
+}
+
 .portfolio-block-one .image-box .content-box h3{
+  position: relative;
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+}
+
+.portfolio-block-one .image-box .content-box h3 a{
+  color: black;
+}
+
+.portfolio-block-one:hover .image-box .content-box h3{
   position: relative;
   color: #fff;
   font-size: 24px;
@@ -20823,7 +20852,7 @@ div#mCSB_1_container{
   text-transform: uppercase;
 }
 
-.portfolio-block-one .image-box .content-box h3 a{
+.portfolio-block-one:hover .image-box .content-box h3 a{
   color: #fff;
 }
 
