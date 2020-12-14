@@ -1349,6 +1349,7 @@ div#mCSB_1_container{
   position: relative;
   margin-right: -270px;
   z-index: 1;
+  /* border-radius: 20px; */
 }
 
 .banner-section .image-box .image-1{
@@ -1360,6 +1361,8 @@ div#mCSB_1_container{
 .banner-section .image-box .image-2{
   position: absolute;
   right: 0px;
+    /* border-radius: 20px; */
+
   top: -60px;
 }
 
@@ -20751,12 +20754,14 @@ div#mCSB_1_container{
   position: relative;
   width: 100%;
   margin-bottom: 30px;
+  /* border-radius: 40px; */
 }
 
 .portfolio-block-one .image-box{
   position: relative;
   display: block;
   background: #4527a4;
+  border-radius: 10%;
 }
 
 .portfolio-block-one .image-box img{
@@ -20764,6 +20769,7 @@ div#mCSB_1_container{
   display: block;
   width: 100%;
   transition: all 500ms ease;
+  border-radius: 10%;
 }
 
 .portfolio-block-one:hover .image-box img{
