@@ -11505,6 +11505,7 @@ div#mCSB_1_container{
   position: absolute;
   top: 0px;
   right: 0px;
+  left: 200px;
   height: 100%;
   width: 100%;
   z-index: -1;
@@ -13506,7 +13507,7 @@ div#mCSB_1_container{
 
 #image_block_37 .image-box img{
   position: relative;
-  width: 100*;
+  width: 100%;
 }
 
 #image_block_37 .image-box .bg-layer{
